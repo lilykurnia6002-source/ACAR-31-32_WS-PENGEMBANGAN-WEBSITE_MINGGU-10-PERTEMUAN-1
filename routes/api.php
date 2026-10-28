@@ -1,7 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\BookController;
+use App\Http\Controllers\OrderController;
 
-Route::apiResource('books', BookController::class);
+Route::post('/order/store', [OrderController::class, 'store']);
